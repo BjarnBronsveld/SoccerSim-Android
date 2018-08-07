@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8BC34A</color>
+    <color name="colorPrimaryDark">#689F38</color>
+    <color name="colorPrimaryLight">#DCEDC8</color>
+    <color name="colorAccent">#607d8b</color>
+
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+
+    <color name="divider">#BDBDBD</color>
+
+    <color name="disabledButtonBackground">#DFDFDF</color>
+    <color name="disabledButtonText">#9F9F9F</color>
+
+    <color name="yellowa400">#FFEA00</color>
+    <color name="yellowa700">#FFD600</color>
+</resources>

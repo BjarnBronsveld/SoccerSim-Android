@@ -1,0 +1,78 @@
+<resources>
+    <!-- Titles -->
+    <string name="app_name">Soccer Sim</string>
+    <string name="title_simulate">Wedstrijden</string>
+    <string name="title_results">Standen</string>
+    <string name="title_more">Meer</string>
+    <string name="title_create_poule">Poule Aanmaken</string>
+
+    <!-- Country Emoji Flags -->
+    <string name="flag_none">🏳</string>
+    <string name="flag_nl">🇳🇱</string>
+    <string name="flag_de">🇩🇪</string>
+    <string name="flag_br">🇧🇷</string>
+    <string name="flag_mx">🇲🇽</string>
+    <string name="flag_fr">🇫🇷</string>
+    <string name="flag_it">🇮🇹</string>
+    <string name="flag_be">🇧🇪</string>
+    <string name="flag_us">🇺🇸</string>
+    <string name="flag_ma">🇲🇦</string>
+    <string name="flag_es">🇪🇸</string>
+
+    <!-- Country Names -->
+    <string name="country_home_none">Thuis</string>
+    <string name="country_away_none">Uit</string>
+    <string name="country_nl">Nederland</string>
+    <string name="country_de">Duitsland</string>
+    <string name="country_br">Brazilië</string>
+    <string name="country_mx">Mexico</string>
+    <string name="country_fr">Frankrijk</string>
+    <string name="country_it">Italië</string>
+    <string name="country_be">België</string>
+    <string name="country_us">Verenigde Staten</string>
+    <string name="country_ma">Marokko</string>
+    <string name="country_es">Spanje</string>
+
+    <!-- Dialog Strings -->
+    <string name="dialog_create_poule_btn">Poule Aanmaken</string>
+    <string name="dialog_welcome">Welkom!</string>
+    <string name="dialog_first_run_msg">Het lijkt erop dat je Soccer Sim voor het eerst start. Ga direct aan de slag en maak een nieuwe poule.</string>
+    <string name="dialog_no_poule_found_msg">Het lijkt erop dat er nog geen poule aangemaakt is! Hierdoor kan je nog geen wedstrijden simuleren. Maak snel een poule aan.</string>
+    <string name="dialog_no_poule">Geen Poule!</string>
+    <string name="dialog_injured_player">Geblesseerde speler!</string>
+    <string name="dialog_injured_player_msg">Uh oh… %1$s heeft een geblesseerde speler. Het team zal een kleinere kans hebben om te winnen. Geen zorgen, als de andere spelers sterk zijn winnen ze misschien nog steeds.</string>
+    <string name="dialog_close">Sluiten</string>
+    <string name="dialog_are_you_sure">Weet je het zeker?</string>
+    <string name="dialog_are_you_sure_msg">Weet je zeker dat je alle gegevens wilt verwijderen? Alle gespeelde wedstrijden en uitslagen zullen worden verwijderd. Dit is <b>niet</b> ongedaan te maken!</string>
+    <string name="dialog_yes">Ja</string>
+    <string name="dialog_no">Nee</string>
+    <string name="dialog_knockout_msg">De volgende teams zullen het tegen elkaar opnemen in de knock-out fase: %1$s tegen %2$s</string>
+    <string name="dialog_knockout_phase">Knock-out Fase</string>
+
+    <!-- Toast messages -->
+    <string name="toast_max_4_teams_in_poule">Je kan maximaal 4 teams kiezen in een poule!</string>
+    <string name="toast_poule_created_msg">Poule is aangemaakt! Veel plezier.</string>
+    <string name="toast_creating_poule_msg">Bezig met het aanmaken van de poule…</string>
+
+    <!-- Other Strings -->
+    <string name="current_game">Huidige wedstrijd</string>
+    <string name="vs">tegen</string>
+    <string name="next_game">Volgende wedstrijd</string>
+    <string name="previous_games">Vorige wedstrijden</string>
+    <string name="no_played_games_in_poule">In deze poule zijn er nog geen wedstrijden gespeeld. Simuleer snel een nieuwe wedstrijd!</string>
+    <string name="create_new_poule">Maak een nieuwe poule!</string>
+    <string name="create_new_poule_desc">Kies vier teams die mee zullen doen in de poule door deze lang ingedrukt te houden en klik vervolgens op Poule Starten om van start te gaan met je poule.</string>
+    <string name="start_poule_btn">Poule Starten</string>
+    <string name="results_position">#.</string>
+    <string name="results_team">Team</string>
+    <string name="results_abbr_matches_played">Gs</string>
+    <string name="results_abbr_points">P</string>
+    <string name="results_abbr_goal_difference">Ds</string>
+    <string name="results_abbr_goals">Gv</string>
+    <string name="results_abbr_counterpoints">Gt</string>
+    <string name="team_stat_attack">Aanval</string>
+    <string name="team_stat_midfield">Middenveld</string>
+    <string name="team_stat_defense">Verdediging</string>
+    <string name="team_stat_keeper">Keeper</string>
+    <string name="game_round">Ronde</string>
+</resources>

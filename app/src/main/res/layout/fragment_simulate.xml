@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".fragments.SimulateFragment">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/start_game_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="9dp"
+        app:layout_constraintBottom_toTopOf="@id/previous_games_title"
+        app:layout_constraintEnd_toStartOf="@+id/previous_games_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/previous_games_title"
+        app:layout_constraintTop_toBottomOf="@+id/game_details_cardview"
+        app:layout_constraintVertical_bias="0.487"
+        app:srcCompat="@drawable/ic_play_arrow_white_24dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/game_details_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <TextView
+                android:id="@+id/round_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/stat_round_background"
+                android:paddingBottom="4dp"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/game_round"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/next_current_game_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/next_game"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/game_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/home_team_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/vs_textview"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.robinhood.ticker.TickerView
+                        android:id="@+id/home_team_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="42sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:ticker_animationDuration="1500" />
+
+                    <TextView
+                        android:id="@+id/home_team_flag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/flag_none"
+                        android:textAlignment="center"
+                        android:textSize="42sp" />
+
+                    <TextView
+                        android:id="@+id/home_team_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/country_home_none"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vs_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="@string/vs"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/away_team_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/vs_textview"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.robinhood.ticker.TickerView
+                        android:id="@+id/away_team_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="42sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:ticker_animationDuration="1500" />
+
+                    <TextView
+                        android:id="@+id/away_team_flag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/flag_none"
+                        android:textAlignment="center"
+                        android:textSize="42sp" />
+
+                    <TextView
+                        android:id="@+id/away_team_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/country_away_none"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/previous_games_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:text="@string/previous_games"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_details_cardview" />
+
+    <TextView
+        android:id="@+id/previous_games_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:text="@string/no_played_games_in_poule"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_games_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/previous_games_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_games_title" />
+
+</android.support.constraint.ConstraintLayout>

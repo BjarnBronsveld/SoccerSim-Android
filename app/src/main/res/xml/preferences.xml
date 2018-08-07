@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Game settings">
+        <SwitchPreference
+            android:key="pref_sound_enabled"
+            android:summary="If enabled, you will enjoy some nice sound effects while playing!"
+            android:title="Enable Sound Effects"
+            android:defaultValue="true"/>
+        <Preference
+            android:key="reset_game"
+            android:summary="Verwijder de huidige poule om vervolgens een nieuwe poule aan te maken."
+            android:title="Gegevens verwijderen" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Over Soccer Sim">
+        <Preference
+            android:key="about"
+            android:summary="Copyright © 2018 Bjarn Bronsveld - In opdracht van Gamebasics"
+            android:title="Over Soccer Sim" />
+    </PreferenceCategory>
+</PreferenceScreen>
