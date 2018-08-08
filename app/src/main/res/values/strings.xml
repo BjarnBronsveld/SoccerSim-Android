@@ -33,6 +33,15 @@
     <string name="country_ma">Marokko</string>
     <string name="country_es">Spanje</string>
 
+    <!-- Preference Strings -->
+    <string name="pref_sound_enabled_sum">Indien ingeschakeld hoor je leuke geluidseffecten tijdens de game!</string>
+    <string name="pref_sound_enabled_title">Geluidseffecten Inschakelen</string>
+    <string name="pref_reset_game_sum">Verwijder de huidige poule om vervolgens een nieuwe poule aan te maken.</string>
+    <string name="pref_reset_game_title">Gegevens verwijderen</string>
+    <string name="pref_copyright">Copyright © 2018 Bjarn Bronsveld - In opdracht van Gamebasics</string>
+    <string name="pref_about_title">Over Soccer Sim</string>
+    <string name="pref_game_settings_title">Spelinstellingen</string>
+
     <!-- Dialog Strings -->
     <string name="dialog_create_poule_btn">Poule Aanmaken</string>
     <string name="dialog_welcome">Welkom!</string>
