@@ -168,6 +168,9 @@ public class ResultsFragment extends Fragment {
         }
     }
 
+    /**
+     * Show the user an alert to show which teams will play in the knock-out phase.
+     */
     private void showResultsAlert() {
         AlertDialog.Builder dialog = new AlertDialog.Builder(getContext())
                 .setTitle(R.string.dialog_knockout_phase)

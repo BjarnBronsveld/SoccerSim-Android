@@ -20,6 +20,11 @@ public class PreviousGamesAdapter extends RealmRecyclerViewAdapter<Game, Previou
 
     private Realm mRealm;
 
+    /**
+     * Public constructor for PreviousGameAdapter
+     *
+     * @param data An OrderedRealmCollection containing {@link Game} objects
+     */
     public PreviousGamesAdapter(OrderedRealmCollection<Game> data) {
         super(data, true);
         setHasStableIds(false);
