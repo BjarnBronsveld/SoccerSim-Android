@@ -78,6 +78,9 @@ public class ResultsFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
+        // Clear arraylist to prevent duplicates
+        mTeams.clear();
+
         Poule poule = mRealm.where(Poule.class)
                 .findFirst();
 

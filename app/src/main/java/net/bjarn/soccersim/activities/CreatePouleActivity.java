@@ -64,7 +64,6 @@ public class CreatePouleActivity extends AppCompatActivity {
                 public void execute(Realm realm) {
                     Toast.makeText(getApplicationContext(), R.string.toast_creating_poule_msg, Toast.LENGTH_SHORT).show();
 
-
                     // Create a new Poule object in Realm with the selected teams and generated games
                     Poule poule = realm.createObject(Poule.class, new Poule().getUuid());
                     poule.setParticipants(mSelectedTeams);
